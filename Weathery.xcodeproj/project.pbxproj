@@ -16,6 +16,7 @@
 		16F2B81A291B11F700DF8A6B /* WeatherDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B819291B11F700DF8A6B /* WeatherDataViewModel.swift */; };
 		16F2B81C291B18C200DF8A6B /* CityWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B81B291B18C200DF8A6B /* CityWeatherVM.swift */; };
 		16F2B81E291B19A100DF8A6B /* CityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2B81D291B19A100DF8A6B /* CityWeatherView.swift */; };
+		3BD44B0F2B06B9BF00AE9E2B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD44B0E2B06B9BF00AE9E2B /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		16F2B819291B11F700DF8A6B /* WeatherDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataViewModel.swift; sourceTree = "<group>"; };
 		16F2B81B291B18C200DF8A6B /* CityWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherVM.swift; sourceTree = "<group>"; };
 		16F2B81D291B19A100DF8A6B /* CityWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherView.swift; sourceTree = "<group>"; };
+		3BD44B0E2B06B9BF00AE9E2B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				16F2B806291B102A00DF8A6B /* ContentView.swift */,
 				16F2B81D291B19A100DF8A6B /* CityWeatherView.swift */,
+				3BD44B0E2B06B9BF00AE9E2B /* AddView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				16F2B81A291B11F700DF8A6B /* WeatherDataViewModel.swift in Sources */,
 				16F2B81C291B18C200DF8A6B /* CityWeatherVM.swift in Sources */,
 				16F2B807291B102A00DF8A6B /* ContentView.swift in Sources */,
+				3BD44B0F2B06B9BF00AE9E2B /* AddView.swift in Sources */,
 				16F2B816291B107D00DF8A6B /* WeatherService.swift in Sources */,
 				16F2B818291B10C800DF8A6B /* WeatherModels.swift in Sources */,
 				16F2B805291B102A00DF8A6B /* WeatheryApp.swift in Sources */,

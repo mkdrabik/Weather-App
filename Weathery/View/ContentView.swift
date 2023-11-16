@@ -9,18 +9,42 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = WeatherDataViewModel()
+    @State var city: String = ""
+    @State var isPresented = false
+    
     var body: some View {
-        VStack {
-            ForEach(viewModel.weatherData) { weather in
-                CityWeatherView(viewModel: CityWeatherVM(model: weather))
+        NavigationStack {
+            HStack {
+                Text("Weathery")
+                    .font(.system(size: 35, weight: .medium, design: .default))
+                    .padding(.trailing, 50)
+                Button{
+                   isPresented = true
+                } label: {
+                    Image(systemName: "plus")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }
             }
-            Button("Get Chapel Hill data") {
-                viewModel.getWeather(cityString: "Chapel Hill")
+            .padding(.vertical, 30)
+            Spacer()
+            VStack {
+                ScrollView(.horizontal){
+                    HStack{
+                        ForEach(viewModel.weatherData) { weather in
+                            CityWeatherView(viewModel: CityWeatherVM(model: weather, unit: "celcius"))
+                        }
+                    }
+                }
+                .padding(.vertical, 40)
+                /*Button("Get data") {
+                    viewModel.getWeather(cityString: city)
+                }
+                 */
             }
-        }
-        // MARK: This onAppear modifier is just fetching the data for Charlotte when this view appears. You can get rid of it.
-        .onAppear {
-            viewModel.getWeather(cityString: "Charlotte")
+            .sheet(isPresented: $isPresented) {
+                AddView(viewModel: viewModel, city: $city, viewing: $isPresented)
+            }
         }
     }
 }

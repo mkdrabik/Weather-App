@@ -14,6 +14,7 @@ struct CityWeatherVM {
     
     /// The weather data being processed by this view model
     let model: Weather
+    let unit: String
     
     
     // MARK: Here's where you should add logic for different representations of the temperature in Fahrenheit, Celsius, etc. You'll also want to make the methods for representing the other data (e.g., the weather icon)
@@ -21,7 +22,24 @@ struct CityWeatherVM {
     /// A getter that returns the formatted temperature, or "No temp" if no data is available. It's currently in Kelvin.
     var formattedCurrentTemp: String {
         guard let temp = model.main?.temp else { return "No temp" }
-        return "\(temp)K"
+        let temperature = Measurement(value: temp, unit: UnitTemperature.kelvin)
+        if(unit == "fahrenheit"){
+            let f = Int(temperature.converted(to: .fahrenheit).value)
+            return "\(f) °F"
+        }
+        if(unit == "fahrenheit"){
+            let f = Int(temperature.converted(to: .fahrenheit).value)
+            return "\(f) °F"
+        }
+        if(unit == "celcius"){
+            let c = Int(temperature.converted(to: .celsius).value)
+            return "\(c) °C"
+        }
+        if(unit == "kelvin"){
+            let k = Int(temperature.converted(to: .kelvin).value)
+            return "\(k) °K"
+        }
+        return "\(temp) °K"
     }
     
     var cityName: String {
