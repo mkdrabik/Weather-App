@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "README.md",
+      "setup": "",
+      "run": "find README.md",
+      "input": "",
+      "output": "README.md",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
