@@ -42,6 +42,28 @@ struct CityWeatherVM {
         return "\(temp) °K"
     }
     
+    var formattedHL: String {
+        guard let h = model.main?.tempMax else { return "No temp"}
+        guard let l = model.main?.tempMin else { return "No temp"}
+        let high = Measurement(value: h, unit: UnitTemperature.kelvin)
+        let low = Measurement(value: l, unit: UnitTemperature.kelvin)
+        
+        if(unit == "fahrenheit"){
+            let hi = Int(high.converted(to: .fahrenheit).value)
+            let lo = Int(low.converted(to: .fahrenheit).value)
+            return "High: \(hi)  Low: \(lo)"
+        }
+        if(unit == "celcius"){
+            let hi = Int(high.converted(to: .celsius).value)
+            let lo = Int(low.converted(to: .celsius).value)
+            return "High: \(hi)  Low: \(lo)"
+        }
+        
+        let hi = Int(high.converted(to: .kelvin).value)
+        let lo = Int(low.converted(to: .kelvin).value)
+        return "High: \(hi)  Low: \(lo)"
+    }
+    
     var cityName: String {
         return model.name ?? "No name"
     }

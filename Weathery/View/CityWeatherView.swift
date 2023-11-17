@@ -14,10 +14,22 @@ struct CityWeatherView: View {
     var body: some View {
         VStack {
             Text(viewModel.cityName)
+                .bold()
+                .font(.system(size: 50))
+                .foregroundColor(.white)
+                .padding()
             Text(viewModel.formattedCurrentTemp)
+                .bold()
+                .font(.system(size: 80))
+                .foregroundColor(.white)
+                .padding()
+            HStack{
+                Text(viewModel.formattedHL)
+                    .foregroundColor(.white)
+            }
         }
         .frame(width: 300, height: 600)
-        .background(Color.blue.opacity(0.1), in: RoundedRectangle(cornerRadius: 10))
+        .background(Color.blue.opacity(0.5), in: RoundedRectangle(cornerRadius: 10))
     }
 }
 
