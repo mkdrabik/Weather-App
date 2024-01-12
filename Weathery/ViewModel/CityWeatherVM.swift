@@ -2,7 +2,7 @@
 //  WeatherViewModel.swift
 //  Weathery
 //
-//  Created by AlecNipp on 11/8/22.
+//  
 //
 
 import Foundation
