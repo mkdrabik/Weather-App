@@ -1,7 +1,7 @@
 //  WeatherModel.swift
 //  AcademyMP07
 //
-//  Created by will astilla on 10/26/22.
+// 
 //
 
 import Foundation
