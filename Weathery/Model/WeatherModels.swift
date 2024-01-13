@@ -1,7 +1,7 @@
 //  WeatherModel.swift
 //  
 //
-// Weather Struct
+//  Weather Struct
 //
 
 import Foundation
