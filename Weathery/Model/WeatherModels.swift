@@ -1,7 +1,7 @@
 //  WeatherModel.swift
-//  AcademyMP07
+//  
 //
-// 
+// Weather Struct
 //
 
 import Foundation
