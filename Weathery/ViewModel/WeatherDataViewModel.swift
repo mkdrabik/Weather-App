@@ -8,7 +8,7 @@
 import Foundation
 
 @MainActor class WeatherDataViewModel: ObservableObject {
-    /// A list tracking weather data for all searched cities
+    // A list tracking weather data for all searched cities
     @Published var weatherData = [Weather]()
     
     /**
