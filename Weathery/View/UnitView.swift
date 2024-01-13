@@ -2,7 +2,7 @@
 //  UnitView.swift
 //  Weathery
 //
-//  Created by Mason Drabik on 11/17/23.
+//  Unit picker view when the gear is clicked
 //
 
 import SwiftUI
