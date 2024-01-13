@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Weathery
 //
-//  
+//  Main content view
 //
 
 import SwiftUI
