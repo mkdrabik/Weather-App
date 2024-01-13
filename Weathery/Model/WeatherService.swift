@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// A namespace for the function that fetches the data from the API
+// A namespace for the function that fetches the data from the API
 enum WeatherService {
     static func getWeather(cityString: String) async -> Weather? {
         let apiKey = "755f77160a12ded1eddd9adc20b9c3f4"
