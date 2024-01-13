@@ -2,7 +2,7 @@
 //  CityWeatherView.swift
 //  Weathery
 //
-//  
+//  View for city once weather is requested
 //
 
 import SwiftUI
