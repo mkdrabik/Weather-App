@@ -2,7 +2,7 @@
 //  AddView.swift
 //  Weathery
 //
-//  Created by Mason Drabik on 11/16/23.
+//  View for adding a city when plus button is clicked
 //
 
 import SwiftUI
